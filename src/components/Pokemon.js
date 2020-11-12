@@ -9,8 +9,8 @@ class Pokemon extends React.Component {
 
     return (
       <li key={this.props.id} className="card">
-        <h3>{this.props.name}</h3>
         <img src={this.props.img} alt={this.props.name} />
+        <h3>{this.props.name}</h3>
         <ul className="types">{pokeTypes}</ul>
       </li>
     );
