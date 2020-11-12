@@ -4,7 +4,6 @@ import PokeList from "./PokeList.js";
 import "../stylesheet/App.scss";
 
 function App() {
-  console.log(pokemons);
   return (
     <div className="App">
       <header className="App-header">

@@ -7,7 +7,7 @@ class PokeList extends React.Component {
     const pokeCards = this.props.pokemons.map((pokemon) => {
       return (
         <Pokemon
-          id={pokemon.id}
+          key={pokemon.id}
           name={pokemon.name}
           img={pokemon.url}
           types={pokemon.types}
