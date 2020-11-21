@@ -1,8 +1,10 @@
 import React from "react";
 import "../stylesheet/Pokemon.scss";
+import PropTypes from "prop-types";
 
 class Pokemon extends React.Component {
   render() {
+    console.log(this.props.id);
     const pokeTypes = this.props.types.map((type, index) => {
       return <li key={index}>{type}</li>;
     });
@@ -16,5 +18,12 @@ class Pokemon extends React.Component {
     );
   }
 }
+
+Pokemon.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  types: PropTypes.array,
+};
 
 export default Pokemon;
