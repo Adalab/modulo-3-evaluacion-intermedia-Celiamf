@@ -1,4 +1,4 @@
-# ADALAB - Promo Kizzy - Módulo 3 React - Ejercicio de evaluación intermedia
+# Pokemon list - React project
 
 ## Celia MF
 
